@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/dim_5">
+
+        <VideoView
+            android:id="@+id/video_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_105"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dim_25"
+        android:paddingLeft="@dimen/dim_12"
+        android:paddingRight="@dimen/dim_12">
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_5"
+            android:text="00:00"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dim_5"
+            android:text="00:15"
+            android:textColor="@color/colorAccent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_25" />
+
+        <ImageView
+            android:id="@+id/position_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dim_25"
+            android:src="@drawable/lf_ugc_publish_pos" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_25"
+            android:background="#66000000"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/id_seekBar_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
